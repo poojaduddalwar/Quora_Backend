@@ -25,7 +25,7 @@ app.use("/api/v1/auth", authRoutes)//this takes care of our auth routes
 
 app.get("/", (req, res) => {
     console.log("server running hurray")
-    res.send(`server running at ${port}`)
+    res.send(`server up and running at ${port}`)
 })  //this is just to see server is running
 
 app.listen(port, (req, res) => {
