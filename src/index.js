@@ -24,7 +24,7 @@ app.use("/api/v1/answer", answerRoutes)//this takes care of our answer routes
 app.use("/api/v1/auth", authRoutes)//this takes care of our auth routes
 
 app.get('/', (req, res) => {
-    console.log("running hurray")
+    console.log("again running hurray")
     res.send(`server running at ${port}`)
 })  //this is just to see server is running
 
