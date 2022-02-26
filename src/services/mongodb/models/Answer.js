@@ -15,7 +15,7 @@ const AnswerSchema = new mongoose.Schema({
     },
     users: {
         type: mongoose.Types.ObjectId,
-        ref: 'Users'
+        ref: 'User'
     },
     likes: [
         {

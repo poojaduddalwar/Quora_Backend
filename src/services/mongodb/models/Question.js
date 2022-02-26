@@ -16,10 +16,10 @@ const QuestionSchema = new mongoose.Schema({
         type: Date,
         default: Date.now()
     },
-    // users: {
-    //     type: mongoose.Types.ObjectId,
-    //     ref: 'Users'
-    // }
+    users: {
+        type: mongoose.Types.ObjectId,
+        ref: 'User'
+    }
 })
 
 const Question = mongoose.model("Question", QuestionSchema)

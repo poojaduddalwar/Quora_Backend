@@ -25,6 +25,14 @@ router.get('/all', async (req, res) => {
                     as: "allAnswers"
                 }
             }
+            // {
+            //     $lookup: {
+            //         from: "users",
+            //         localField: "_id",
+            //         foreignField: "question",
+            //         as: "user"
+            //     }
+            // }
         ])
         res.status(200).json({ question, message: "Successfully fetched question" })
     } catch (error) {

@@ -22,14 +22,14 @@ const UserSchema = new mongoose.Schema({
         type: Number,
         default: 0
     },
-    question: {
-        type: mongoose.Types.ObjectId,
-        ref: 'Question'
-    },
-    answer: {
-        type: mongoose.Types.ObjectId,
-        ref: 'Answer'
-    }
+    // question: {
+    //     type: mongoose.Types.ObjectId,
+    //     ref: 'Question'
+    // },
+    // answer: {
+    //     type: mongoose.Types.ObjectId,
+    //     ref: 'Answer'
+    // }
 })
 
 
