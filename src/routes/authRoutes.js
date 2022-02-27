@@ -91,7 +91,7 @@ router.post('/login', async (req, res) => {
             if (isVerified) {
                 const { _id, role } = user
                 const token = jwt.sign({ _id, role }, process.env.JWT_SECRET, { expiresIn: "1h" })
-                return res.json({ token, _id })
+                return res.json({ token })
             } else {
                 return res.json({ token: null, message: "UNAUTHORISED" })
             }
