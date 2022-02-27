@@ -24,7 +24,7 @@ app.use("/api/v1/answer", answerRoutes)//this takes care of our answer routes
 app.use("/api/v1/auth", authRoutes)//this takes care of our auth routes
 
 app.get("/", (req, res) => {
-    res.send(`server up and running at ${port}`)
+    res.send(`server up and running at ${port} after final commit`)
 })  //this is just to see server is running
 
 app.listen(port, (req, res) => {
