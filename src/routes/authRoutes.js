@@ -85,6 +85,7 @@ router.post('/login', async (req, res) => {
         console.log({ email, password })
         //find the user
         const user = await User.findOne({ email }) //authentication
+        console.log(user)
         if (user) {                         // is authorizing
             const isVerified = await bcrypt.compare(password, user.password)
 
