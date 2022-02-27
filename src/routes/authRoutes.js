@@ -82,7 +82,7 @@ isProtected : false
 router.post('/login', async (req, res) => {
     try {
         const { email, password } = req.body
-
+        console.log({ email, password })
         //find the user
         const user = await User.findOne({ email }) //authentication
         if (user) {                         // is authorizing
